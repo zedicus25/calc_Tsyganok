@@ -14,6 +14,10 @@ int multiply(int a, int b) {
     return a * b;
 }
 int divide(int a, int b) {
+    if (a == 0) {
+        cout << "Деление на ноль запрещенно" << endl;
+        return 0;
+    }
     return a / b;
 }
 int max(int a, int b) {
